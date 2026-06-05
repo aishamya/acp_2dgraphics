@@ -16,16 +16,16 @@ void rectangle(char canvas[40][40],int x,int y,int width,int height){
     int i;
     for(i=x;i<x+width;i++){
         canvas[y][i]='*';
-        canvas[y+height-i][i]='*';
+        canvas[y+height-1][i]='*';
     }
     for(i=y;i<y+height;i++){
         canvas[i][x]='*';
-        canvas[i][x+width-i]='*';
+        canvas[i][x+width-1]='*';
     }
     }
 
 void circle(char canvas[40][40],int x,int y,int rad){
-     canvas[y][x]='0';
+     canvas[y][x]='O';
 }
 void triangle(char canvas[40][40],int x1,int y1,int x2,int y2,int x3, int y3)
 {
