@@ -1,4 +1,4 @@
-#include"shapes.h"
+#include "shapes.h"
 void line(char canvas[40][40],int x1,int y1,int x2,int y2){
     int i;
     if(y1==y2){
@@ -20,7 +20,7 @@ void rectangle(char canvas[40][40],int x,int y,int width,int height){
     }
     for(i=y;i<y+height;i++){
         canvas[i][x]='*';
-        canvas[i][x+width-i][i]='*';
+        canvas[i][x+width-i]='*';
     }
     }
 
