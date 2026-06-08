@@ -3,8 +3,8 @@
  void Canvas_initialization(char canvas[ROWS][COLS]){
     int i,j;
     for(i=0;i<ROWS;i++){
-        for(j=0;i<COLS;j++){
-            canvas[i][j]=' ';
+        for(j=0;j<COLS;j++){
+            canvas[i][j]='_';
     }
  }
 }
@@ -16,4 +16,7 @@ void Canvas_display(char canvas[ROWS][COLS]){
     }
     printf("\n");
  }
+}
+void clear_canvas(char canvas[ROWS][COLS]) {
+    Canvas_initialization(canvas);
 }
