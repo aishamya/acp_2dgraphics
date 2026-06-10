@@ -11,8 +11,12 @@ typedef struct{
     int x3,y3;
     int rad;
 }Object;
-void add(Object objects);
+void add(Object obj);
 void deleteobj();
 void redraw(char canvas[ROWS][COLS]);
-void modify(Object objects);
+void modify(Object obj);
+void modify_at(int idx, Object obj);
+void list_objects();
+int  getObjectCount();
+void reset_objects();
 #endif

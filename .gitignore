@@ -55,3 +55,6 @@ dkms.conf
 *.dwo
 #macOs files
 .DS_Store
+editor
+a.out
+*.o
